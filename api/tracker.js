@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     const data = await response.json();
 
     const now = Date.now();
-    const ONE_DAY_MS = 2 * 60 * 1000; // ২৪ ঘণ্টার মিলি-সেকেন্ড
+    const ONE_DAY_MS = 20 * 60 * 1000; // ২৪ ঘণ্টার মিলি-সেকেন্ড
 
     if (data.documents) {
       for (const doc of data.documents) {
